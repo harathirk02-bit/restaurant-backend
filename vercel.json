@@ -1,0 +1,21 @@
+{
+<<<<<<< HEAD
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+=======
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+>>>>>>> 7eb27dae08cc3530ebc2d47a5c0d4b9e329bf4a8
+    }
+  ]
+}
