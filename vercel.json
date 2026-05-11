@@ -1,6 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
   "builds": [
     {
       "src": "main.py",
@@ -11,17 +9,6 @@
     {
       "src": "/(.*)",
       "dest": "main.py"
-=======
-=======
->>>>>>> 6e9512a178765ae6d76b08213cbe647b1287ba73
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-<<<<<<< HEAD
->>>>>>> 7eb27dae08cc3530ebc2d47a5c0d4b9e329bf4a8
-=======
->>>>>>> 6e9512a178765ae6d76b08213cbe647b1287ba73
     }
   ]
 }
