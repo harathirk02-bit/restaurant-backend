@@ -20,7 +20,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["https://restaurant-frontend-pgnu.vercel.app"],
     allow_headers=["*"],
 )
 
