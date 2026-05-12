@@ -11,12 +11,21 @@ from models.user import User
 from models.menu_item import MenuItem
 from models.order import Order
 
-# CREATE TABLES
-Base.metadata.create_all(bind=engine)
-
 app = FastAPI(
     title="Restaurant Menu Manager API"
 )
+
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# CREATE TABLES
+Base.metadata.create_all(bind=engine)
 
 # INCLUDE ROUTERS
 app.include_router(menu_router)
